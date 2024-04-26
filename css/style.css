@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+nav {
+  font-size: 1.5rem;
+}
+
+.main-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/img/cine.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-registro {
+  font-size: 1.5rem;
+}
+.main-content h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.card {
+  width: 15rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Pagina detalle                               */
+/* -------------------------------------------------------------------------- */
+.main-detail {
+  margin-top: 5rem;
+}
+
+.card-detail {
+  width: 80%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.text-detail {
+  padding: 0 0 0 5rem;
+}
+
+.card-detail img {
+  width: 20rem;
+}
+
+@media screen and (max-width: 600px) {
+  .card-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-detail {
+    padding: 1rem;
+  }
+}

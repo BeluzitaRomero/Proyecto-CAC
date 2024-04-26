@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>MOVIES</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">MOVIES</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white active"
+                  aria-current="page"
+                  href="#tendencias"
+                  >Tendencias</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pages/registrarse.html"
+                  >Registrarse</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pages/login.html"
+                  >Iniciar sesion</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <div class="d-flex flex-column align-items-center container">
+        <h1>Tenes Movies, tenes tu cine en casa</h1>
+        <h2 class="text-center my-5">
+          Todas las peliculas y series que buscas a un click de distancia
+        </h2>
+        <a
+          class="btn btn-primary my-5 mb-5 btn-registro"
+          href="pages/registrarse.html"
+          >Registrarse</a
+        >
+      </div>
+    </main>
+
+    <section class="container d-flex flex-column align-items-center">
+      <h2 class="text-center my-5">Busca peliculas o series por nombre</h2>
+      <form action="" class="form-home">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control border border-primary"
+            placeholder="Nombre de pelicula"
+            aria-label="Nombre de pelicula"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-outline-secondary border border-primary"
+            type="suhmit"
+            id="button-addon2"
+          >
+            Buscar
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <div class="w-75 m-auto my-5">
+      <hr class="border border-primary border-3 opacity-75" />
+    </div>
+
+    <section id="tendencias" class="container my-5">
+      <h2 class="text-center my-5">¿Qué es tendendencia? Enterate aca</h2>
+      <div class="d-flex justify-content-center flex-wrap gap-5">
+        <article class="card">
+          <a class="text-decoration-none text-dark" href="pages/detalle.html">
+            <img
+              src="./assets/img/abigail-210x300.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a class="text-decoration-none text-dark" href="pages/detalle.html">
+            <img
+              src="./assets/img/desafiantes-210x300.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card">
+          <a class="text-decoration-none text-dark" href="pages/detalle.html">
+            <img
+              src="./assets/img/el-planeta-de-los-simios-nuevo-reino-210x300.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a class="text-decoration-none text-dark" href="pages/detalle.html">
+            <img
+              src="./assets/img/un-gato-con-suerte-210x300.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a class="text-decoration-none text-dark" href="pages/detalle.html">
+            <img
+              src="./assets/img/arthur-una-amistad-sin-limites-210x300.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a class="text-decoration-none text-dark" href="pages/detalle.html">
+            <img
+              src="./assets/img/back-to-black-210x300.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a class="text-decoration-none text-dark" href="pages/detalle.html">
+            <img
+              src="./assets/img/dias-perfectos.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a class="text-decoration-none text-dark" href="pages/detalle.html">
+            <img
+              src="./assets/img/guerra-civil-210x300.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a class="text-decoration-none text-dark" href="pages/detalle.html">
+            <img
+              src="./assets/img/kunfupanda4-210x300.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a class="text-decoration-none text-dark" href="pages/detalle.html">
+            <img
+              src="./assets/img/profesion-peligro-210x300.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a class="text-decoration-none text-dark" href="pages/detalle.html">
+            <img
+              src="./assets/img/recuerdos-mortales-210x300.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">FB</a></li>
+        <li><a href="#">IG</a></li>
+        <li><a href="#">LALA</a></li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
