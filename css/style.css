@@ -110,3 +110,15 @@ nav {
   background-position-y: 80%;
   height: 80vh;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+/* -------------------------------------------------------------------------- */
+.footer-list-info li {
+  display: inline-block;
+  margin: 2rem;
+}
+
+footer {
+  font-size: 1.2rem;
+}
