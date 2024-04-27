@@ -15,7 +15,7 @@ nav {
 }
 
 .main-content {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../assets/img/cine.jpg");
 
   background-size: cover;
@@ -25,7 +25,7 @@ nav {
 .btn-registro {
   font-size: 1.5rem;
 }
-.main-content h1 {
+.main-title {
   font-size: 4rem;
   text-align: center;
   margin-top: 4rem;
@@ -70,4 +70,43 @@ nav {
   .text-detail {
     padding: 1rem;
   }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    form                                    */
+/* -------------------------------------------------------------------------- */
+.form-card {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #0e2267;
+}
+
+.main-register {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../assets/img/bg/bg-pop-esquina.jpg");
+  background-size: cover;
+  /* background-position: bottom; */
+  height: 80vh;
+}
+
+.main-register h1,
+.main-login h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    login                                   */
+/* -------------------------------------------------------------------------- */
+.main-login {
+  /* pochoclos y director cut*/
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/img/bg/flat-lay-cinema-elements-with-copyspace.webp"); */
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../assets/img/bg/pop-bottom-comp.webp");
+  background-size: cover;
+  background-position: bottom;
+  background-position-y: 80%;
+  height: 80vh;
 }
