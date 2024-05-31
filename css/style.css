@@ -124,20 +124,27 @@ footer {
 /* -------------------------------------------------------------------------- */
 /*                                media-querie                                */
 /* -------------------------------------------------------------------------- */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
   .card-detail {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5rem;
   }
 
   .text-detail {
-    padding: 1rem;
+    margin-top: 2rem;
+    padding: 0;
+    max-width: 20rem;
+    width: 100%;
   }
   footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  footer ul {
+    padding: 0;
   }
 }

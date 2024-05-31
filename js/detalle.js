@@ -42,6 +42,7 @@ const renderMovieDetails = (movie) => {
   const bodyCard = document.createElement("div");
   bodyCard.classList.add("text-detail");
   const title = document.createElement("h1");
+  title.classList.add("mb-4");
   title.textContent = `${movie.title}`;
   bodyCard.appendChild(title);
 
@@ -51,6 +52,7 @@ const renderMovieDetails = (movie) => {
   bodyCard.appendChild(overview);
 
   const description = document.createElement("p");
+  description.classList.add("mb-4");
   description.textContent = `${movie.overview}`;
   bodyCard.appendChild(description);
 
@@ -73,7 +75,15 @@ const renderMovieDetails = (movie) => {
   details1.appendChild(h3Release);
 
   const release = document.createElement("p");
-  release.textContent = `${movie.release_date}`;
+
+  //La api me da fecha numerica en formato ingles, asi que la adapto
+  const format = movie.release_date.split("-");
+  const month = new Date("2024", parseInt(format[1]) - 1, 1).toLocaleString(
+    "es",
+    { month: "long" }
+  );
+
+  release.textContent = `${format[2]} de ${month} del ${format[0]}`;
   details1.appendChild(release);
 
   const h3Genres = document.createElement("h3");
