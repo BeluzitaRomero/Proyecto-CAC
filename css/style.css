@@ -7,7 +7,16 @@
 body {
   font-family: "Cabin", sans-serif;
   color: white;
-  background-color: black;
+  background-color: #000000;
+  /* para combinar con wrapper y flex para bajar el footer */
+  height: 100%;
+}
+
+.wrapper {
+  /* para combinar con wrapper y flex para bajar el footer */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 nav {
@@ -40,6 +49,8 @@ nav {
 /* -------------------------------------------------------------------------- */
 .main-detail {
   margin-top: 5rem;
+  /* para combinar con wrapper y flex para bajar el footer */
+  flex: 1;
 }
 
 .card-detail {
@@ -48,7 +59,7 @@ nav {
 
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
 }
 
 .text-detail {

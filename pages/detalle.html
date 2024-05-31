@@ -19,48 +19,51 @@
     <title>Detalle de pelicula</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-black">
-        <div class="container-fluid">
-          <a class="navbar-brand text-white" href="../index.html">MOVIES</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link text-white active"
-                  aria-current="page"
-                  href="../index.html#tendencias"
-                  >Tendencias</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="registrarse.html"
-                  >Registrarse</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="login.html"
-                  >Iniciar sesion</a
-                >
-              </li>
-            </ul>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-black">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="../index.html">MOVIES</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white active"
+                    aria-current="page"
+                    href="../index.html#tendencias"
+                    >Tendencias</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="registrarse.html"
+                    >Registrarse</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="login.html"
+                    >Iniciar sesion</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
-    <main class="main-detail container">
-      <article class="card-detail">
+        </nav>
+      </header>
+      <main class="main-detail container" id="detalle-pelicula">
+        <!-- Ahora esto viene por el js -->
+
+        <!-- <article class="card-detail">
         <figure>
           <img
             src="../assets/img/desafiantes-210x300.jpg"
@@ -96,42 +99,44 @@
             </div>
           </div>
         </div>
-      </article>
-    </main>
-    <footer
-      class="container-fluid bg-gradient d-flex justify-content-around align-items-center"
-    >
-      <div class="my-3">
-        <p>
-          Imagenes de stock proporcionadas por
-          <a
-            class="text-decoration-none text-info"
-            href="https://www.freepik.es/"
-            target="_blank"
-            >Freepik</a
-          >
-          y
-          <a
-            class="text-decoration-none text-info"
-            href="https://www.pexels.com/es-es/"
-            target="_blank"
-            >Pexels</a
-          >
-        </p>
-      </div>
-      <div class="footer-list-info">
-        <ul>
-          <li>
-            <a class="nav-link" href="index.html">Terminos y condiciones</a>
-          </li>
-          <li><a class="nav-link" href="index.html">FAQ</a></li>
-        </ul>
-      </div>
-    </footer>
+      </article> -->
+      </main>
+      <footer
+        class="container-fluid bg-gradient d-flex justify-content-around align-items-center"
+      >
+        <div class="my-3">
+          <p>
+            Imagenes de stock proporcionadas por
+            <a
+              class="text-decoration-none text-info"
+              href="https://www.freepik.es/"
+              target="_blank"
+              >Freepik</a
+            >
+            y
+            <a
+              class="text-decoration-none text-info"
+              href="https://www.pexels.com/es-es/"
+              target="_blank"
+              >Pexels</a
+            >
+          </p>
+        </div>
+        <div class="footer-list-info">
+          <ul>
+            <li>
+              <a class="nav-link" href="index.html">Terminos y condiciones</a>
+            </li>
+            <li><a class="nav-link" href="index.html">FAQ</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/detalle.js"></script>
   </body>
 </html>
