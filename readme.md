@@ -18,7 +18,7 @@ El proyecto fue desarrollado por **Ana Belen Romero**
 
 ## Capturas de Pantalla
 
-![Home](assets/repo/home-1.JPG){: width="300px" margin="32px"}
+![Home](assets/repo/home-1.JPG){: width="100px" height="100px"}
 ![Home](assets/repo/home-2.JPG){: width="300px" margin="32px"}
 ![Detalle](assets/repo/detalle.JPG){: width="300px" margin="32px"}
 ![Registro](assets/repo/registro.JPG){: width="300px" margin="32px"}
