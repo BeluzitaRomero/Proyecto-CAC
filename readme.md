@@ -18,11 +18,11 @@ El proyecto fue desarrollado por **Ana Belen Romero**
 
 ## Capturas de Pantalla
 
-<img src="assets/repo/home-1.JPG" alt="Home" width="100">
-![Home](assets/repo/home-2.JPG){: width="300px" margin="32px"}
-![Detalle](assets/repo/detalle.JPG){: width="300px" margin="32px"}
-![Registro](assets/repo/registro.JPG){: width="300px" margin="32px"}
-![Login](assets/repo/login.JPG){: width="300px" margin="32px"}
+<img src="assets/repo/home-1.JPG" alt="Home" width="300" >
+<img src="assets/repo/home-2.JPG" alt="Home" width="300">
+<img src="assets/repo/detalle.JPG" alt="Detalle" width="300">
+<img src="assets/repo/registro.JPG" alt="Registro" width="300">
+<img src="assets/repo/login.JPG" alt="Login" width="300">
 
 ## Instalación y Uso
 
