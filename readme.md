@@ -20,37 +20,17 @@ El proyecto fue desarrollado por **Ana Belen Romero**
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
   <div>
-    <figure>
       <img src="assets/repo/home-1.JPG" alt="Home" width="300">
-      <figcaption>Inicio - Home 1</figcaption>
-    </figure>
-  </div>
-  <div>
-    <figure>
       <img src="assets/repo/home-2.JPG" alt="Home" width="300">
-      <figcaption>Inicio - Home 2</figcaption>
-    </figure>
   </div>
-</div>
+
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
   <div>
-    <figure>
       <img src="assets/repo/detalle.JPG" alt="Detalle" width="300">
-      <figcaption>Detalle de Película</figcaption>
-    </figure>
-  </div>
-  <div>
-    <figure>
       <img src="assets/repo/registro.JPG" alt="Registro" width="300">
-      <figcaption>Formulario de Registro</figcaption>
-    </figure>
   </div>
-</div>
 <div>
-  <figure>
     <img src="assets/repo/login.JPG" alt="Login" width="300">
-    <figcaption>Formulario de Inicio de Sesión</figcaption>
-  </figure>
 </div>
 
 ## Instalación y Uso
