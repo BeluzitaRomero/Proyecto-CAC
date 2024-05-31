@@ -14,15 +14,15 @@ Este proyecto es un sitio web dinámico desarrollado como parte del curso "Codo 
 
 ## Autora
 
-El proyecto fue desarrollado por **Aba Belen Romero** como parte del curso "Codo a Codo".
+El proyecto fue desarrollado por **Ana Belen Romero**
 
 ## Capturas de Pantalla
 
-![Home](assets/repo/home-1.JPG)
-![Home](assets/repo/home-2.JPG)
-![Detalle](assets/repo/detalle.JPG)
-![Registro](assets/repo/registro.JPG)
-![Login](assets/repo/login.JPG)
+![Home](assets/repo/home-1.JPG){: width="300px" margin="32px"}
+![Home](assets/repo/home-2.JPG){: width="300px" margin="32px"}
+![Detalle](assets/repo/detalle.JPG){: width="300px" margin="32px"}
+![Registro](assets/repo/registro.JPG){: width="300px" margin="32px"}
+![Login](assets/repo/login.JPG){: width="300px" margin="32px"}
 
 ## Instalación y Uso
 
