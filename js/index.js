@@ -1,5 +1,5 @@
 //nuestra api local - fijense de alojarlo igual en htdocs -
-const API_URL = "http://localhost/backend-movies/getPeliculas.php";
+const API_URL = "http://localhost/backend-movies/crud/getPeliculas.php";
 
 // Pedimos películas desde API PHP
 async function getPeliculas() {

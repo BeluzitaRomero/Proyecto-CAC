@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const response = await fetch(
         //api local
-        "http://localhost/backend-movies/insertPelicula.php",
+        "http://localhost/backend-movies/crud/insertPelicula.php",
         {
           method: "POST",
           body: formData,
