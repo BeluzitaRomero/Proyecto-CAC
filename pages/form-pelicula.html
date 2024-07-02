@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>MOVIES</title>
   </head>
   <body>
@@ -29,7 +29,7 @@
         <div class="container-fluid">
           <a
             class="navbar-brand text-white logo"
-            href="index.html"
+            href="../index.html"
             data-aos="flip-down"
             >MOVIES</a
           >
@@ -55,18 +55,13 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="pages/registrarse.html"
+                <a class="nav-link text-white" href="registrarse.html"
                   >Registrarse</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="pages/login.html"
+                <a class="nav-link text-white" href="login.html"
                   >Iniciar sesion</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="pages/form-pelicula.html"
-                  >Agregar</a
                 >
               </li>
             </ul>
@@ -76,53 +71,48 @@
     </header>
     <main class="main-content">
       <div class="d-flex flex-column align-items-center container">
-        <h1 class="main-title">Tenes Movies, tenes tu cine en casa</h1>
-        <h2 class="text-center my-5">
-          Todas las peliculas y series que buscas a un click de distancia
-        </h2>
-        <a
-          class="btn btn-primary my-5 mb-5 btn-registro"
-          href="pages/registrarse.html"
-          >Registrarse</a
-        >
+        <h1 class="main-title">Agregar peliculas</h1>
+
+        <form id="form-pelicula" enctype="multipart/form-data">
+          <label for="titulo">Título:</label>
+          <input type="text" id="titulo" name="titulo" required /><br /><br />
+
+          <label for="sinopsis">Sinopsis:</label><br />
+          <textarea id="sinopsis" name="sinopsis" rows="4" required></textarea
+          ><br /><br />
+
+          <label for="imagen">Imagen:</label>
+          <input
+            type="file"
+            id="imagen"
+            name="imagen"
+            accept="image/*"
+            required
+          /><br /><br />
+
+          <label for="estreno">Estreno:</label>
+          <input type="date" id="estreno" name="estreno" required /><br /><br />
+
+          <label for="genero">Género:</label>
+          <input type="text" id="genero" name="genero" required /><br /><br />
+
+          <label for="idioma">Idioma:</label>
+          <input type="text" id="idioma" name="idioma" required /><br /><br />
+
+          <label for="duracion">Duración (minutos):</label>
+          <input
+            type="number"
+            id="duracion"
+            name="duracion"
+            required
+          /><br /><br />
+
+          <button type="submit">Agregar Película</button>
+        </form>
+        <div id="mensaje"></div>
       </div>
     </main>
 
-    <section class="container d-flex flex-column align-items-center">
-      <h2 class="text-center my-5">Busca peliculas o series por nombre</h2>
-      <form action="" class="form-home">
-        <div class="input-group mb-3">
-          <input
-            type="text"
-            class="form-control border border-primary"
-            placeholder="Nombre de pelicula"
-            aria-label="Nombre de pelicula"
-            aria-describedby="button-addon2"
-          />
-          <button
-            class="btn btn-outline-secondary border border-primary"
-            type="suhmit"
-            id="button-addon2"
-          >
-            Buscar
-          </button>
-        </div>
-      </form>
-    </section>
-
-    <div class="w-75 m-auto my-5">
-      <hr class="border border-primary border-3 opacity-75" />
-    </div>
-
-    <section id="tendencias" class="container my-5">
-      <h2 class="text-center my-5">¿Qué es tendendencia? Enterate aca</h2>
-      <div
-        id="peliculas-container"
-        class="d-flex justify-content-center flex-wrap gap-5"
-      >
-        <!-- Render de cards desde index.js -->
-      </div>
-    </section>
     <footer
       class="container-fluid bg-gradient d-flex justify-content-around align-items-center"
     >
@@ -157,6 +147,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="js/index.js"></script>
+    <script src="../js/formPelicula.js"></script>
   </body>
 </html>
