@@ -34,7 +34,7 @@ function actualizarNavegacion() {
     document.getElementById("cerrar-sesion").addEventListener("click", (e) => {
       e.preventDefault();
       localStorage.removeItem("user");
-      window.location.href = `${window.location.origin}/index.html`;
+      window.location.href = `https://beluzitaromero.github.io/Proyecto-CAC/index.html`;
     });
   } else {
     // Asegurarse de que los enlaces se muestren para usuarios no autenticados si existen
