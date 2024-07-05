@@ -1,5 +1,4 @@
-const API_KEY = "7271771e6043ab63ad877def2bc41391";
-const BASE_URL = "https://api.themoviedb.org/3";
+const API_URL = "http://localhost/backend-movies/crud/getPelicula.php";
 
 //tomo la url del id de pelicula
 const getMovieIdFromURL = () => {
@@ -9,9 +8,7 @@ const getMovieIdFromURL = () => {
 //pido esa pelicula especifica
 const getMovieById = async (movieId) => {
   try {
-    const response = await fetch(
-      `${BASE_URL}/movie/${movieId}?api_key=${API_KEY}&language=es-ES`
-    );
+    const response = await fetch(`${API_URL}?id=${movieId}`);
     const movieData = await response.json();
     console.log(movieData, "MOVIE DATA");
     return movieData;
@@ -31,8 +28,8 @@ const renderMovieDetails = (movie) => {
   // creo contenedor de imagen
   const figure = document.createElement("figure");
   const imgMovie = document.createElement("img");
-  imgMovie.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
-  imgMovie.alt = `${movie.title} poster`;
+  imgMovie.src = `${movie.img}`;
+  imgMovie.alt = `${movie.titulo} poster`;
   figure.appendChild(imgMovie);
 
   //agrego figure a article
@@ -43,7 +40,7 @@ const renderMovieDetails = (movie) => {
   bodyCard.classList.add("text-detail");
   const title = document.createElement("h1");
   title.classList.add("mb-4");
-  title.textContent = `${movie.title}`;
+  title.textContent = `${movie.titulo}`;
   bodyCard.appendChild(title);
 
   // Overview con su p de descripcion
@@ -53,7 +50,7 @@ const renderMovieDetails = (movie) => {
 
   const description = document.createElement("p");
   description.classList.add("mb-4");
-  description.textContent = `${movie.overview}`;
+  description.textContent = `${movie.sinopsis}`;
   bodyCard.appendChild(description);
 
   // Div necesario para organizar con flex los 4 detalles
@@ -63,13 +60,7 @@ const renderMovieDetails = (movie) => {
   //div1 de Estreno y genero
   const details1 = document.createElement("div");
   details1.classList.add("d-flex", "flex-column", "justify-content-around");
-  // const h3clasification = document.createElement("h3");
-  // h3clasification.textContent = `Clasificacion`;
-  // details1.appendChild(h3clasification);
 
-  // const clasification = document.createElement("p");
-  // clasification.textContent = "No hay clasificacion";
-  // details1.appendChild(clasification);
   const h3Release = document.createElement("h3");
   h3Release.textContent = `Estreno`;
   details1.appendChild(h3Release);
@@ -77,7 +68,7 @@ const renderMovieDetails = (movie) => {
   const release = document.createElement("p");
 
   //La api me da fecha numerica en formato ingles, asi que la adapto
-  const format = movie.release_date.split("-");
+  const format = movie.estreno.split("-");
   const month = new Date("2024", parseInt(format[1]) - 1, 1).toLocaleString(
     "es",
     { month: "long" }
@@ -91,8 +82,7 @@ const renderMovieDetails = (movie) => {
   details1.appendChild(h3Genres);
 
   const genres = document.createElement("p");
-  const genresList = movie.genres.map((element) => element.name).join(", ");
-  genres.textContent = genresList;
+  genres.textContent = movie.genero;
   details1.appendChild(genres);
 
   //Agrego el detalle 1 al contenedor de detalles
@@ -106,7 +96,7 @@ const renderMovieDetails = (movie) => {
   details2.append(h3Duration);
 
   const duration = document.createElement("p");
-  duration.textContent = `${movie.runtime} minutos`;
+  duration.textContent = `${movie.duracion} minutos`;
   details2.appendChild(duration);
 
   const h3Languages = document.createElement("h3");
@@ -114,10 +104,7 @@ const renderMovieDetails = (movie) => {
   details2.appendChild(h3Languages);
 
   const lang = document.createElement("p");
-  const langList = movie.spoken_languages
-    .map((element) => element.name)
-    .join(", ");
-  lang.textContent = langList;
+  lang.textContent = movie.idioma;
   details2.appendChild(lang);
 
   //Agrego el detalle 2 al contenedor de detalles
