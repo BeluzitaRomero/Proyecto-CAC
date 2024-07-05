@@ -20,9 +20,9 @@ function displayMovies(movies) {
     const movieItem = document.createElement("article");
     movieItem.classList.add("card");
 
-    const title = document.createElement("h2");
-    title.innerText = movie.titulo;
-    movieItem.appendChild(title);
+    // const title = document.createElement("h2");
+    // title.innerText = movie.titulo;
+    // movieItem.appendChild(title);
 
     const movieDetailLink = document.createElement("a");
     movieDetailLink.classList.add("text-decoration-none", "text-dark");
@@ -38,6 +38,8 @@ function displayMovies(movies) {
 
     moviesContainer.appendChild(movieItem);
   });
+
+  let datosLocales = localStorage.getItem("user");
 }
 //Invocola función para obtener y mostrar las películas
 getPeliculas();
