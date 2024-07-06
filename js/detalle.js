@@ -1,4 +1,5 @@
-const API_URL = "http://localhost/backend-movies/crud/getPelicula.php";
+const API_URL =
+  "https://proyecto-movies-cac.000webhostapp.com/crud/getPelicula.php";
 
 //tomo la url del id de pelicula
 const getMovieIdFromURL = () => {

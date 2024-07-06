@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const formData = new FormData(form);
     try {
       const response = await fetch(
-        "http://localhost/backend-movies/login.php",
+        "https://proyecto-movies-cac.000webhostapp.com/login.php",
         {
           method: "POST",
           body: formData,

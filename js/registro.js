@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "http://localhost/backend-movies/registro.php",
+        "https://proyecto-movies-cac.000webhostapp.com/registro.php",
         {
           method: "POST",
           body: formData,
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const data = await response.json();
         console.log("Respuesta del servidor:", data);
         alert("Usuario registrado");
+        window.location.href = "../index.html";
       } else {
         console.error("Error en la solicitud:", response.statusText);
       }
