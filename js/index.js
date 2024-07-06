@@ -1,5 +1,6 @@
 //nuestra api local - fijense de alojarlo igual en htdocs -
-const API_URL = "http://localhost/backend-movies/getPeliculas.php";
+const API_URL =
+  "https://proyecto-movies-cac.000webhostapp.com/crud/getPeliculas.php";
 
 // Pedimos películas desde API PHP
 async function getPeliculas() {
@@ -15,14 +16,15 @@ async function getPeliculas() {
 // Funcion para mostrar las card de pelis
 function displayMovies(movies) {
   const moviesContainer = document.getElementById("peliculas-container");
+  console.log(movies);
 
   movies.forEach((movie) => {
     const movieItem = document.createElement("article");
     movieItem.classList.add("card");
 
-    const title = document.createElement("h2");
-    title.innerText = movie.titulo;
-    movieItem.appendChild(title);
+    // const title = document.createElement("h2");
+    // title.innerText = movie.titulo;
+    // movieItem.appendChild(title);
 
     const movieDetailLink = document.createElement("a");
     movieDetailLink.classList.add("text-decoration-none", "text-dark");
@@ -38,6 +40,8 @@ function displayMovies(movies) {
 
     moviesContainer.appendChild(movieItem);
   });
+
+  let datosLocales = localStorage.getItem("user");
 }
 //Invocola función para obtener y mostrar las películas
 getPeliculas();

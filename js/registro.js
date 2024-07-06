@@ -1,29 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("form-registro").addEventListener("submit", (e) => {
-    e.preventDefault();
+  const form = document.getElementById("form-registro");
 
-    // Validación de campos
-    const name = document.getElementById("nombre").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const pass = document.getElementById("pass").value.trim();
-    const rePass = document.getElementById("pass-repeat").value.trim();
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
 
-    if (name.length < 6 || name.length > 15) {
-      alert("Usuario debe tener entre 6 y 15 caracteres");
-      return;
-    } else if (pass.length < 6) {
-      alert("Contraseña debe tener al menos 6 caracteres");
-      return;
-    } else if (pass !== rePass) {
-      alert("Las contraseñas no coinciden");
-      return;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(
+        "https://proyecto-movies-cac.000webhostapp.com/registro.php",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log("Respuesta del servidor:", data);
+        alert("Usuario registrado");
+        window.location.href = "../index.html";
+      } else {
+        console.error("Error en la solicitud:", response.statusText);
+      }
+    } catch (error) {
+      console.error("Error en la solicitud:", error);
     }
 
-    //Vemos por consola que se tomaron los campos correctamente
-    console.log("Usuario:", { name, email, pass });
-
-    // Borrar los campos
-    document.getElementById("form-registro").reset();
-    alert("Usuario registrado");
+    form.reset();
   });
 });

@@ -1,23 +1,44 @@
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("form-login").addEventListener("submit", (e) => {
+  const form = document.getElementById("form-login");
+
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    // Validación de campos
-    const user = document.getElementById("nombre-usuario").value.trim();
-    const pass = document.getElementById("password").value.trim();
-    if (!user || !pass) {
-      alert("Por favor, completa todos los campos.");
-      return;
-    } else if (user.length < 6 || user.length > 15 || pass.length < 6) {
-      alert("Usuario y contraseña deben tener entre 6 y 15 caracteres");
-      return;
+    const formData = new FormData(form);
+    try {
+      const response = await fetch(
+        "https://proyecto-movies-cac.000webhostapp.com/login.php",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log("Respuesta del servidor:", data);
+
+        // Guardar datos del usuario en localStorage
+        localStorage.setItem("user", JSON.stringify(data));
+
+        alert("Login exitoso");
+
+        // Redirigir o mostrar contenido según el rol
+        if (data.rol === "admin") {
+          window.location.href = "../index.html"; // Redirigir a la página de administración
+        } else {
+          window.location.href = "../index.html"; // Redirigir a la página de usuario
+        }
+      } else {
+        const errorData = await response.json();
+        console.error("Error en la solicitud:", errorData.mensaje);
+        alert(`Error: ${errorData.mensaje}`);
+      }
+    } catch (error) {
+      console.error("Error en la solicitud:", error);
+      alert("Ocurrió un error al iniciar sesión. Inténtalo nuevamente.");
     }
 
-    //Vemos por consola que se tomaron los campos correctamente
-    console.log("Usuario:", { user, password });
-
-    // Borrar los campos
-    document.getElementById("form").reset();
-    alert("Login exitoso");
+    form.reset();
   });
 });
