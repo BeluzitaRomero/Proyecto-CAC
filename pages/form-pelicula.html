@@ -72,42 +72,42 @@
     <main class="main-content">
       <div class="d-flex flex-column align-items-center container">
         <h1 class="main-title">Agregar peliculas</h1>
-
-        <form id="form-pelicula" enctype="multipart/form-data">
+        <br>
+        <form id="form-pelicula" class="flex-column" enctype="multipart/form-data">
           <label for="titulo">Título:</label>
-          <input type="text" id="titulo" name="titulo" required /><br /><br />
-
+          <input type="text" id="titulo" class="form-control mb-3" name="titulo" required />
           <label for="sinopsis">Sinopsis:</label><br />
-          <textarea id="sinopsis" name="sinopsis" rows="4" required></textarea
-          ><br /><br />
-
+          <textarea id="sinopsis" class="form-control mb-3" name="sinopsis" rows="4" required></textarea>
           <label for="imagen">Imagen:</label>
           <input
             type="file"
             id="imagen"
+            class="form-control mb-3"
             name="imagen"
             accept="image/*"
             required
-          /><br /><br />
-
+          />
           <label for="estreno">Estreno:</label>
-          <input type="date" id="estreno" name="estreno" required /><br /><br />
+          <input type="date" id="estreno" class="form-control mb-3" name="estreno" required />
 
           <label for="genero">Género:</label>
-          <input type="text" id="genero" name="genero" required /><br /><br />
+          <input type="text" id="genero" class="form-control mb-3" name="genero" required />
 
           <label for="idioma">Idioma:</label>
-          <input type="text" id="idioma" name="idioma" required /><br /><br />
+          <input type="text" id="idioma" class="form-control mb-3" name="idioma" required />
 
           <label for="duracion">Duración (minutos):</label>
           <input
             type="number"
             id="duracion"
+            class="form-control mb-3"
             name="duracion"
             required
-          /><br /><br />
-
-          <button type="submit">Agregar Película</button>
+          /><br>
+          <span class="d-flex flex-column">
+            <button type="submit" class="btn btn-primary my-2">Agregar Película</button>
+          </span>
+          <br><br>
         </form>
         <div id="mensaje"></div>
       </div>
