@@ -1,5 +1,6 @@
 //nuestra api local - fijense de alojarlo igual en htdocs -
-const API_URL = "http://localhost/backend-movies/crud/getPeliculas.php";
+const API_URL =
+  "https://proyecto-movies-cac.000webhostapp.com/crud/getPeliculas.php";
 
 // Pedimos películas desde API PHP
 async function getPeliculas() {
@@ -15,6 +16,7 @@ async function getPeliculas() {
 // Funcion para mostrar las card de pelis
 function displayMovies(movies) {
   const moviesContainer = document.getElementById("peliculas-container");
+  console.log(movies);
 
   movies.forEach((movie) => {
     const movieItem = document.createElement("article");
