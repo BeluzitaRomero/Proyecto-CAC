@@ -3,7 +3,6 @@ const API_URL =
   "https://proyecto-movies-cac.000webhostapp.com/crud/getPeliculas.php";
   //"http://localhost:80/proyecto-cac-backend-grupal-master/crud/getPeliculas.php";
 // Pedimos películas desde API PHP
-// Pedimos películas desde API PHP
 async function getPeliculas() {
   try {
     const response = await fetch(API_URL);
@@ -25,10 +24,10 @@ function displayMovies(movies) {
     row.classList.add('row');
   
     const col1 = document.createElement('div');
-    col1.classList.add('col-10', 'd-flex', 'align-items-center'); // Added classes for alignment
+    col1.classList.add('col-10', 'd-flex', 'align-items-center'); 
   
     const titulo = document.createElement('p');
-    titulo.innerHTML = `<strong>${movie.titulo}</strong>`; // Using template literal
+    titulo.innerHTML = `<strong>${movie.titulo}</strong>`; 
   
     col1.appendChild(titulo);
   
