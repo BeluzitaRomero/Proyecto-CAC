@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
       const response = await fetch(
         "https://proyecto-movies-cac.000webhostapp.com/crud/updatePelicula.php"
-        //"http://localhost:80/proyecto-cac-backend-grupal-master/crud/updatePelicula.php"
         , options);
       const responseData = await response.json();
 
