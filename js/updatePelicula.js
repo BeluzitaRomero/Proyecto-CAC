@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Armo el fetch
     const options = {
-      method: 'PUT',
+      //method: 'PUT', no lo soparta el hosting
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
