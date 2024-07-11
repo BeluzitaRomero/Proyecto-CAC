@@ -49,11 +49,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
       const response = await fetch(
         "https://proyecto-movies-cac.000webhostapp.com/crud/updatePelicula.php"
+        
+
         , options);
       const responseData = await response.json();
 
       if (response.ok) {
         alert(responseData.message);
+        window.location.href = "../pages/administrador.html";
         
       } else {
         alert(responseData.error);

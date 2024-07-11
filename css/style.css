@@ -126,6 +126,26 @@ nav a:hover {
 }
 
 /* -------------------------------------------------------------------------- */
+/*                                    Admin                                  */
+/* -------------------------------------------------------------------------- */
+.main-admin {
+  /* pochoclos y director cut*/
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/img/bg/flat-lay-cinema-elements-with-copyspace.webp"); */
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../assets/img/bg/recorte-popcorn-cinema-concept.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-position-y: 80%;
+  
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
 /*                                   footer                                   */
 /* -------------------------------------------------------------------------- */
 .footer-list-info li {
