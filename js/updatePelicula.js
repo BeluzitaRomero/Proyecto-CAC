@@ -39,8 +39,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Armo el fetch
     const options = {
-      //method: 'PUT', no lo soparta el hosting
-      method: 'POST',
+      method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -49,7 +48,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
       const response = await fetch(
-        "https://proyecto-movies-cac.000webhostapp.com/crud/updatePelicula.php"
+        "http://localhost/final/cac-back/crud/updatePelicula.php"
         
 
         , options);

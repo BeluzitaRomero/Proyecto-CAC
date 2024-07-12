@@ -6,10 +6,8 @@ function actualizarNavegacion() {
   //que todavia no estan en el DOM cuando se ejecuta el session.js
   if (user) {
     // Ocultar enlaces de "Iniciar sesión" y "Registrarse"
-    const loginLink = document.querySelector('a[href="pages/login.html"]');
-    const registerLink = document.querySelector(
-      'a[href="pages/registrarse.html"]'
-    );
+    const loginLink = document.getElementById("login");
+    const registerLink = document.getElementById("registrarse");
     if (loginLink) loginLink.style.display = "none";
     if (registerLink) registerLink.style.display = "none";
 
@@ -21,9 +19,7 @@ function actualizarNavegacion() {
     nav.appendChild(cerrarSesionLink);
 
     // Mostrar enlace de "Agregar" si el usuario es admin
-    const addMovieLink = document.querySelector(
-      'a[href="pages/form-pelicula.html"]'
-    );
+    const addMovieLink = document.getElementById("admin");
     if (user.rol === "admin") {
       if (addMovieLink) addMovieLink.style.display = "block";
     } else {
@@ -34,17 +30,14 @@ function actualizarNavegacion() {
     document.getElementById("cerrar-sesion").addEventListener("click", (e) => {
       e.preventDefault();
       localStorage.removeItem("user");
-      window.location.href = `https://beluzitaromero.github.io/Proyecto-CAC/index.html`;
+      window.location.href = `http://localhost/final/cac-front/index.html`;
     });
   } else {
     // Asegurarse de que los enlaces se muestren para usuarios no autenticados si existen
-    const loginLink = document.querySelector('a[href="pages/login.html"]');
-    const registerLink = document.querySelector(
-      'a[href="pages/registrarse.html"]'
-    );
-    const addMovieLink = document.querySelector(
-      'a[href="pages/form-pelicula.html"]'
-    );
+    const loginLink = document.getElementById("login");
+    const registerLink = document.getElementById("registrarse");
+
+    const addMovieLink = document.getElementById("admin");
     if (loginLink) loginLink.style.display = "block";
     if (registerLink) registerLink.style.display = "block";
     if (addMovieLink) addMovieLink.style.display = "none";

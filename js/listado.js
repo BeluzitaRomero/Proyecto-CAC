@@ -1,6 +1,6 @@
 //nuestra api local - fijense de alojarlo igual en htdocs -
 const API_URL =
-  "https://proyecto-movies-cac.000webhostapp.com/crud/getPeliculas.php";
+  "http://localhost/final/cac-back/crud/getPeliculas.php";
   
   // Pedimos películas desde API PHP
 async function getPeliculas() {

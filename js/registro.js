@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "https://proyecto-movies-cac.000webhostapp.com/registro.php",
+        "http://localhost/final/cac-back/registro.php",
         {
           method: "POST",
           body: formData,

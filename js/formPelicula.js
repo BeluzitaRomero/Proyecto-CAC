@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const response = await fetch(
         //api local
-        "https://proyecto-movies-cac.000webhostapp.com/crud/insertPelicula.php",
+        "http://localhost/final/cac-back/crud/insertPelicula.php",
         
         {
           method: "POST",

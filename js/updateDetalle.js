@@ -1,5 +1,5 @@
 const API_URL =
-"https://proyecto-movies-cac.000webhostapp.com/crud/getPelicula.php";
+"http://localhost/final/cac-back/crud/getPelicula.php";
 
 //tomo la url del id de pelicula
 const getMovieIdFromURL = () => {

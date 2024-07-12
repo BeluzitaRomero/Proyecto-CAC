@@ -4,9 +4,8 @@ function eliminarPelicula(idPelicula) {
 
   console.log(idPelicula);
   if (confirmacion) {
-    fetch('https://proyecto-movies-cac.000webhostapp.com/crud/delPelicula.php', {
-      //method: 'DELETE', No lo soparta el hosting
-      method: 'POST',
+    fetch('http://localhost/final/cac-back/crud/delPelicula.php', {
+      method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
       },
